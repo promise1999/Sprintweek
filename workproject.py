@@ -1,31 +1,3 @@
-"""
-You’ve been contracted by a local math tutoring center who is trying to introduce students to graphing
-functions. The center would like for students to be able to enter the name of a particular type of
-function, and then see a sample graph plotted of that variety. The program should first take in the name
-of a function, for example “quadratic”, the program should prompt for any necessary coefficients, then
-the program should then ask the user if they want to display the graph right away, or if they want to
-save it to a file. If they choose to save it to a file, the program should prompt for a file name to save it to,
-and then the program should save a picture of the graph to the specified file name. The full list of graphs
-that you should implement are listed below:
-Graph Name Formula
-linear f(x) = a*x+b
-quadratic f(x) = a*x^2 + b*x + c
-cubic f(x) = a*x^3 + b*x^2 + c*x + d
-quartic f(x) = a*x^4 + b*x^3 + c*x^2 + d*x + e
-exponential f(x) = a*b^(c*x + d)
-logarithmic f(x) = a*log(b*x + c)
-sine f(x) = a*sin(b*x + c)
-cos f(x) = a*cos(b*x + c)
-square root f(x) = a*sqrt(b*x + c)
-cube root f(x) = a*(b*x + c)^(1/3)
-Note that in each case, you should take in parameters to fill in the formula’s coefficients. For
-example, if the user types “linear” you should prompt for values of a and b. For quadratic, prompt for
-a, b, and c. For cubic prompt for a, b, c, and d. For quartic, prompt for values of a, b, c, d, and e. For
-exponential, prompt for values of a, b, c, and d. For log, sin, cos, square root, and cube root, prompt
-for a, b, and c.
-In all cases, you should prompt for the range to plot the graph between. For example, let’s say I
-wanted to plot the graph f(x) = x from -10 to 10. To do this, I’d use the program like so:
-"""
 import numpy as npy
 import matplotlib.pyplot as plt
 import math
